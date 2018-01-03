@@ -1,3 +1,7 @@
 .vs/
 BuilderPattern/obj/
 BuilderPattern/bin/Debug/
+BuilderPattern/Settings.StyleCop
+BuilderPattern/StyleCop.Cache
+BuilderPattern/bin/Release/BuilderPattern.exe.config
+BuilderPattern/bin/Release/BuilderPattern.pdb

@@ -4,6 +4,6 @@
     <ProjectView>ShowAllFiles</ProjectView>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Debug|AnyCPU'">
-    <StartArguments>intel-core-i7 8 500 GV-N710D5-2GL</StartArguments>
+    <StartArguments>asus intel-core-i7 8 500 GV-N710D5-2GL</StartArguments>
   </PropertyGroup>
 </Project>

@@ -1,47 +1,35 @@
 ﻿namespace BuilderPattern
 {
+    /// <summary>
+    /// 華碩電腦建造器
+    /// </summary>
     internal class AsusComputerBuilder : Builder
     {
-        private readonly Computer Product = new Computer();
-
+        /// <summary>
+        /// 建構子
+        /// </summary>
         public AsusComputerBuilder()
         {
             this.AddMb();
         }
 
-        public override Builder AddRam(int size)
-        {
-            this.Product.Add($"RAM:{size}G");
-            return this;
-        }
-
-        public override Builder AddCpu(string model)
-        {
-            this.Product.Add($"CPU:{model}");
-            return this;
-        }
-
-        public override Builder AddHd(int size)
-        {
-            this.Product.Add($"HD:{size}G");
-            return this;
-        }
-
-        public override Builder AddGraphicsCard(string model)
-        {
-            this.Product.Add($"Graphics Card:{model}");
-            return this;
-        }
-
-        private Builder AddMb()
-        {
-            this.Product.Add($"Mother Board:Asus");
-            return this;
-        }
-
+        /// <summary>
+        /// 複寫取得電腦
+        /// </summary>
+        /// <returns>電腦</returns>
         public override Computer GetComputer()
         {
-            return this.Product;
+            return this.product;
+        }
+
+        /// <summary>
+        /// 加入主機板
+        /// </summary>
+        /// <returns>電腦建造器</returns>
+        private Builder AddMb()
+        {
+            this.product.Add($"Mother Board:Asus");
+            return this;
         }
     }
 }
